@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+    .login-box(class="mt-5")
+        .header
+            h2 Log In
+        form(action="/auth_login", method="post")
+            .form-group(class="mt-4") 
+                label(for="email" class="fs-4 text-secondary") Email 
+                input(type="email" name="email" class="form-control p-3")
+
+            .form-group(class="mt-4"  class="fs-4 text-secondary") 
+                label(for="password") Password 
+                input(type="password" name="password" class="form-control p-3")
+
+            button(type="submit" class="btn btn-primary mt-4 btn-lg") Login
